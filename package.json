@@ -1,16 +1,24 @@
 {
   "name": "hasget",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
+  "keywords": [],
+  "author": "https://github.com/amensum",
+  "homepage": "https://github.com/amensum/hasget",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amensum/hasget.git"
+  },
+  "bugs": {
+    "url": "https://github.com/amensum/hasget/issues"
+  },
+  "license": "ISC",
   "main": "./dist/hasget.js",
   "scripts": {
     "watch": "webpack --watch",
     "build": "webpack",
     "test": "mocha --require @babel/register tests"
   },
-  "keywords": [],
-  "author": "https://github.com/amensum",
-  "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.12.10",
     "@babel/core": "^7.12.10",
