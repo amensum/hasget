@@ -1,0 +1,25 @@
+{
+  "name": "hasget",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/hasget.js",
+  "scripts": {
+    "watch": "webpack --watch",
+    "build": "webpack",
+    "test": "mocha --require @babel/register tests"
+  },
+  "keywords": [],
+  "author": "https://github.com/amensum",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/register": "^7.12.10",
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1",
+    "webpack": "^5.10.3",
+    "webpack-cli": "^4.2.0"
+  },
+  "dependencies": {}
+}
