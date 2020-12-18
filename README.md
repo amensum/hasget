@@ -33,17 +33,20 @@ const { has, get } = hasget;
 
 Example:
 ```js
-const obj = { el: { text: 'hello' } };
+const obj = { user: { firstname: 'Nik', lastname: null } };
 
-has(obj, 'el'); // true
-get(obj, 'el'); // { text: 'hello' }
+has(obj, 'user'); // true
+get(obj, 'user'); // { firstname: 'Nik', lastname: null }
 
-has(obj, 'el.text'); // true
-get(obj, 'el.text'); // 'hello'
+has(obj, 'user.firstname'); // true
+get(obj, 'user.firstname'); // 'Nik'
 
-has(obj, 'el.url'); // false
-get(obj, 'el.url'); // undefined
+has(obj, 'user.lastname'); // false
+get(obj, 'user.lastname'); // null
 
-has(obj, 'el.size.width'); // false
-get(obj, 'el.size.heigth'); // undefined
+has(obj, 'user.birthdate'); // false
+get(obj, 'user.birthdate'); // undefined
+
+has(obj, 'user.birthdate.year'); // false
+get(obj, 'user.birthdate.year'); // undefined
 ```
