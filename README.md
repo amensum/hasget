@@ -4,6 +4,10 @@
 [![license](https://img.shields.io/npm/l/hasget.svg?style=flat-square&logo=npm)](https://npmjs.com/package/hasget)
 [![downloads](https://img.shields.io/npm/dm/hasget.svg?style=flat-square&logo=npm)](https://npmjs.com/package/hasget)
 
+By this library you easy can:
+- Check if the specified nested property of object exists as a direct property of object;
+- Get the specified nested property of object as a direct property of object;
+
 ## Installing
 Using npm:
 ```bash
