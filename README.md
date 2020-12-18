@@ -1,8 +1,8 @@
 # hasget
-![version](https://img.shields.io/npm/v/hasget.svg?style=flat-square&logo=npm)
-![size](https://img.shields.io/bundlephobia/min/hasget.svg?style=flat-square&logo=npm)
-![license](https://img.shields.io/npm/l/hasget.svg?style=flat-square&logo=npm)
-![downloads](https://img.shields.io/npm/dm/hasget.svg?style=flat-square&logo=npm)
+[![version](https://img.shields.io/npm/v/hasget.svg?style=flat-square&logo=npm)](https://npmjs.com/package/hasget)
+[![size](https://img.shields.io/bundlephobia/min/hasget.svg?style=flat-square&logo=npm)](https://npmjs.com/package/hasget)
+[![license](https://img.shields.io/npm/l/hasget.svg?style=flat-square&logo=npm)](https://npmjs.com/package/hasget)
+[![downloads](https://img.shields.io/npm/dm/hasget.svg?style=flat-square&logo=npm)](https://npmjs.com/package/hasget)
 
 ## Installing
 Using npm:
