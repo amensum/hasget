@@ -21,17 +21,17 @@ Using unpkg CDN:
 ```
 
 ## Usage
-Import (module)
+Import (module):
 ```js
 import { has, get } from 'hasget';
 ```
 
-Import (global)
+Import (global):
 ```js
 const { has, get } = hasget;
 ```
 
-Example
+Example:
 ```js
 const obj = { el: { text: 'hello' } };
 
