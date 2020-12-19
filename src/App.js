@@ -1,13 +1,28 @@
-export const has = (obj, path) => path.split('.').every(
-	current => {
-		obj = obj[current];
-		return typeof obj !== 'undefined' && obj !== null;
-	}
-);
+export const has = (obj, path) => typeof get(obj, path) !== 'undefined';
 
 export const get = (obj, path) => path.split('.').reduce(
-	(accumulator, current) => {
-		return typeof accumulator === 'undefined' || accumulator === null ? accumulator : accumulator[current];
+	(accumulator, cur, ind, arr) => {
+		if (typeof accumulator === 'undefined') {
+			return undefined;
+		}
+
+		if (accumulator === null) {
+			return undefined;
+		}
+
+		if (typeof accumulator[cur] === 'undefined') {
+			return undefined;
+		}
+
+		if (accumulator[cur] === null) {
+			if (arr.length === ind + 1) {
+				return null;
+			}
+
+			return undefined;
+		}
+
+		return accumulator[cur];
 	},
 	obj
 );

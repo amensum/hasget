@@ -45,7 +45,7 @@ get(obj, 'user'); // { firstname: 'Nik', lastname: null }
 has(obj, 'user.firstname'); // true
 get(obj, 'user.firstname'); // 'Nik'
 
-has(obj, 'user.lastname'); // false
+has(obj, 'user.lastname'); // true
 get(obj, 'user.lastname'); // null
 
 has(obj, 'user.birthdate'); // false

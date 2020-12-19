@@ -39,10 +39,12 @@ describe('get()', () => {
 		const b = App.get(a, 'b');
 		const bc = App.get(a, 'b.c');
 		const bd = App.get(a, 'b.d');
+		const bde = App.get(a, 'b.d.e');
 
 		chai.expect(b).to.eql({ c: 'test', d: null });
 		chai.expect(bc).to.eql('test');
 		chai.expect(bd).to.eql(null);
+		chai.expect(bde).to.eql(undefined);
 	});
 });
 
@@ -83,9 +85,11 @@ describe('has()', () => {
 		const b = App.has(a, 'b');
 		const bc = App.has(a, 'b.c');
 		const bd = App.has(a, 'b.d');
+		const bde = App.has(a, 'b.d.e');
 
 		chai.expect(b).to.eql(true);
 		chai.expect(bc).to.eql(true);
-		chai.expect(bd).to.eql(false);
+		chai.expect(bd).to.eql(true);
+		chai.expect(bde).to.eql(false);
 	});
 });
