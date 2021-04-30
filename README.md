@@ -26,17 +26,17 @@ Using unpkg CDN:
 
 ## Usage
 Import (module):
-```js
+```javascript
 import { has, get } from 'hasget';
 ```
 
 Import (global):
-```js
+```javascript
 const { has, get } = hasget;
 ```
 
 Example:
-```js
+```javascript
 const obj = { user: { firstname: 'Nik', lastname: null } };
 
 has(obj, 'user'); // true
